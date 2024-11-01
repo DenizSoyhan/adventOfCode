@@ -30,15 +30,15 @@ function questionOne(){
         for(var z=0;z<26;z++){
             dictionary[`${String.fromCharCode(97+z)}`]=0;
         }
-        //console.log(dictionary);
+        
 
         for(var k=0;k<data.length;k++){
             if(data[k] != '\n' ){
-                //console.log(data[k][i]);
+              
                 dictionary[`${data[k][i]}`]=dictionary[data[k][i]]+1;
             }
         }
-        //console.log(dictionary);
+    
 
         var arrayOfItems=Object.keys(dictionary).map(function(key){
             return [key,dictionary[key]];
